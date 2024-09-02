@@ -24,12 +24,17 @@ const audioPlayer: AudioPlayer = {
 const song = 'New Song';
 
 const { song:anotherSong, songDuration:duration, details } = audioPlayer;
-// details > author
 const { author } = details
 
-console.log('Song: ', anotherSong );
-console.log('Duration: ', duration );
-console.log('Author: ', author );
+// console.log('Song: ', anotherSong );
+// console.log('Duration: ', duration );
+// console.log('Duration: ', audioPlayer.details.author );
+// console.log('Author: ', author );
+
+
+const [ , , trunks = 'Not found' ]: string[] = ['Goku', 'Vegeta',];
+
+console.error('Personaje 3: ', trunks );
 
 
 export {};
