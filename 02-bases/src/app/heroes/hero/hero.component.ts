@@ -26,4 +26,13 @@ export class HeroComponent {
     this.age = 25;
   }
 
+  resetForm():void {
+    this.name = 'ironman';
+    this.age = 45;
+
+    // document.querySelectorAll('h1')!.forEach( element => {
+    //   element.innerHTML = '<h1>Desde angular</h1>';
+    // });
+  }
+
 }
