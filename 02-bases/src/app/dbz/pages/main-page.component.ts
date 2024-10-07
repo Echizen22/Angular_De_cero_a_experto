@@ -21,8 +21,12 @@ export class MainPageComponent {
 
 
     onNewCharacter( character: Character ):void {
-      console.log('MainPage');
-      console.log(character);
+      console.log({character});
+      this.chracters.push(character);
+    }
+
+    onDeleteCharacter( xxxx:xxx ) {
+      this.chracters.splice()
     }
 
 }
