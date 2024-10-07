@@ -9,7 +9,7 @@ import { Character } from '../interfaces/character.interface';
 })
 export class DbzService {
 
-  public chracters: Character[] = [{
+  public characters: Character[] = [{
     id: uuid(),
     name: 'Krillin',
     power: 1000
@@ -24,18 +24,18 @@ export class DbzService {
   }];
 
 
-  onNewCharacter( character: Character ):void {
+  addCharacter( character: Character ):void {
 
     const newCharacter: Character = { id: uuid(), ...character }
 
-    this.chracters.push(newCharacter);
+    this.characters.push(newCharacter);
   }
 
   // onDeleteCharacter( index:number ) {
     // this.chracters.splice(index, 1);
 
   deleteCharacterById( id:string ) {
-    this.chracters = this.chracters.filter( character => character.id !== id );
+    this.characters = this.characters.filter( character => character.id !== id );
   }
 
 }
