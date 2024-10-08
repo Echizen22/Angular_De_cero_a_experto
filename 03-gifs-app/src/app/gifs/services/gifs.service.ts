@@ -5,6 +5,7 @@ export class GifsService {
 
 
   private _tagsHistory: string[] = [];
+  private apiKey: string = 'qAcgiqk8HA1GuMSgLaP3RXIHrqi2WUEM';
 
   constructor() { }
 
