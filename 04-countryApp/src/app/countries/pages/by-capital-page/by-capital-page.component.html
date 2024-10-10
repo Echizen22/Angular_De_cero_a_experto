@@ -13,6 +13,10 @@
 <div class="row">
   <div class="col">
     <hr>
-    tabla de resultados
+    <ul>
+      <li *ngFor="let countrie of countries">
+        {{ countrie.capital }} - {{ countrie.population }}
+      </li>
+    </ul>
   </div>
 </div>
