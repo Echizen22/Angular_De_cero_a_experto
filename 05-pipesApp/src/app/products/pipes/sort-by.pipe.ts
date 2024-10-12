@@ -8,7 +8,7 @@ export class SortByPipe implements PipeTransform {
 
   transform( heroes: Hero[], sortBy?: keyof Hero | '' ): Hero[] {
 
-    console.log({ heroes, sortBy});
+    // console.log({ heroes, sortBy});
 
     switch( sortBy ) {
 
